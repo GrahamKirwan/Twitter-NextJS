@@ -13,6 +13,8 @@ interface Props {
 
 const Home = ({ tweets }: Props) => {
 
+  console.log(tweets)
+
   return (
     <div className='mx-auto max-h-screen overflow-hidden lg:max-w-6xl'>
       <Head>
@@ -25,6 +27,7 @@ const Home = ({ tweets }: Props) => {
         <Sidebar />
 
         <Feed tweets={tweets} />
+        
 
         <Widgets />
 
